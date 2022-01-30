@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Quiz Project</title>
+  </head>
+  <body>
+    <header>
+      <a id="leaderboard" class="leaderboard">View Highscores <i class="fas fa-hand-point-left fa-lg"></i></a>
+      <div class="time">Time:</div>
+    </header>
+    <main>
+      <!-- Start Quiz Model -->
+      <div class="start-quiz-model-container">
+        <h2>Coding Quiz Challenge</h2>
+        <p>Try to answer to following code-related questions within the time limit.</p>
+        <p>Keep in min that incorrect answers will penalize your score/time by ten seconds!</p>
+        <button class="start-quiz">Start Quiz</button>
+      </div>
+      <!-- Question Model -->
+      <div class="question-container">
+        <!-- <div class="question-status">Incorrect!</div> -->
+      </div>
+      <!-- Completed Question Model -->
+      <div class="complete-question-container">
+        <h2>All done!</h2>
+        <p class="user-score"></p>
+        <form>
+          <label for="name" class="name">Enter initals:</label>
+          <input type="text" name="name" id="name" />
+          <input type="submit" class="submit-btn" />
+        </form>
+      </div>
+      <!-- Highscores Question Model -->
+      <div class="highscores-container">
+        <h2>Highscores</h2>
+        <div class="high-scores-data"></div>
+        <div class="highscores-btns">
+          <button class="backButton">Go Back</button>
+          <button class="clearHighScoreButton">Clear Highscores</button>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
